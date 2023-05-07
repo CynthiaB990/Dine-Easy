@@ -1,1 +1,99 @@
+:root {
+  --primaryColor: rgb(255, 99, 71); /* Tomato */
+  --secondaryColor: hsl(40, 70%, 70%); /* Light orange */
+  --gradientColor: linear-gradient(to right, hsl(40, 70%, 70%), rgb(255, 99, 71));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 0%);
+  --textColor: hsl(0, 0%, 20%);
+  --lightGreyColor: hsl(0, 0%, 90%);
+  --darkGreyColor: hsl(0, 0%, 40%);
+  --inputColor: hsl(0, 0%, 80%);
+  --bodyColor: rgb(246, 246, 246);
+  --cardBg: hsl(0, 0%, 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.section {
+  padding: 4rem 0.5rem;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  background: var(--gradientColor);
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn a {
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+
+.btn a:hover {
+  color: var(--SecondaryColor);
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+input {
+  font-size: 100%;
+}
+
+body {
+  background: var(--bodyColor);
+}
+
+@media screen and (min-width: 1240px) {
+  .container {
+    width: 80% !important;
+    margin: auto;
+  }
+
+  .section{
+    padding: 6rem 0.4rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .body {
+    zoom: 1.7;
+  }
+}
 
