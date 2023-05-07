@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { BiRestaurant } from 'react-icons/bi'
+import React, { useState } from 'react';
+import { BiRestaurant } from 'react-icons/bi';
 import { NavLink } from 'react-router-dom';
 import { TbGridDots } from "react-icons/tb";
 
