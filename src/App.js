@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Switch, Route, BrowserRouter } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
@@ -10,12 +10,12 @@ import About from "./Common/About.js";
 import Reservation from "./Common/Reservation.js";
 import Contact from './Common/Contact.js'
 import Login from "./Common/Login.js";
-import Register from './Common/Register.js'
+import Registration from './Common/Registration.js'
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <Router>
+      <div className="App">
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
@@ -24,12 +24,12 @@ function App() {
           <Route exact path="/reservation" component={Reservation} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/login" component={Login} />
-          <Route exact path="/register" component={Register} />
+          <Route exact path="/registration" component={Registration} />
         </Switch>
         <Header />
         <Footer />
-      </BrowserRouter>
-    </div>
+      </div>
+    </Router>
   );
 }
 
