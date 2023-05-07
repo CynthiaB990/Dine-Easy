@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BiRestaurant } from 'react-icons/bi'
 import { NavLink } from 'react-router-dom';
+import { TbGridDots } from "react-icons/tb";
 
 function Navbar() {
-  const [active, setActive] = React.useState('navBarActive');
+  const [active, setActive] = useState('active');
 
-  const toggleHamburger = () => {
-    // toggle the active boolean in the state
-    setActive(active === 'navBarActive'? 'navBarActive' : 'navBarInactive');
+  const toggleNavBar = () => {
+    setActive(active === 'navBarActive' ? 'navBarInactive' : 'navBarActive');
   };
-  
+
+
   return (
     <section className="navBarSection">
       <header className="header flex">
@@ -68,6 +69,10 @@ function Navbar() {
                 </NavLink>
               </li>
             </ul>
+
+            <div className="toggleNavBar" onClick={toggleNavBar}>
+              <TbGridDots className="icon" />
+            </div>
           </div>
         </div>
       </header>
